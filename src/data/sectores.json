@@ -1,0 +1,198 @@
+[
+  {
+    "id": "siurana",
+    "nombre": "Siurana",
+    "region": "Tarragona, Cataluña, España",
+    "latitud": 41.259,
+    "longitud": 0.936
+  },
+  {
+    "id": "margalef",
+    "nombre": "Margalef",
+    "region": "Tarragona, Cataluña, España",
+    "latitud": 41.284,
+    "longitud": 0.765
+  },
+  {
+    "id": "rodellar",
+    "nombre": "Rodellar",
+    "region": "Huesca, Aragón, España",
+    "latitud": 42.281,
+    "longitud": -0.078
+  },
+  {
+    "id": "riglos",
+    "nombre": "Riglos",
+    "region": "Huesca, Aragón, España",
+    "latitud": 42.347,
+    "longitud": -0.728
+  },
+  {
+    "id": "el-chorro",
+    "nombre": "El Chorro",
+    "region": "Málaga, Andalucía, España",
+    "latitud": 36.909,
+    "longitud": -4.760
+  },
+  {
+    "id": "cuenca",
+    "nombre": "Cuenca",
+    "region": "Cuenca, Castilla-La Mancha, España",
+    "latitud": 40.020,
+    "longitud": -2.146
+  },
+  {
+    "id": "albarracin",
+    "nombre": "Albarracín",
+    "region": "Teruel, Aragón, España",
+    "latitud": 40.413,
+    "longitud": -1.439
+  },
+  {
+    "id": "montserrat",
+    "nombre": "Montserrat",
+    "region": "Barcelona, Cataluña, España",
+    "latitud": 41.593,
+    "longitud": 1.829
+  },
+  {
+    "id": "chulilla",
+    "nombre": "Chulilla",
+    "region": "Valencia, Comunidad Valenciana, España",
+    "latitud": 39.655,
+    "longitud": -0.893
+  },
+  {
+    "id": "oliana",
+    "nombre": "Oliana",
+    "region": "Lleida, Cataluña, España",
+    "latitud": 42.090,
+    "longitud": 1.315
+  },
+  {
+    "id": "patones",
+    "nombre": "Patones",
+    "region": "Madrid, Comunidad de Madrid, España",
+    "latitud": 40.858,
+    "longitud": -3.484
+  },
+  {
+    "id": "sella",
+    "nombre": "Sella",
+    "region": "Alicante, Comunidad Valenciana, España",
+    "latitud": 38.608,
+    "longitud": -0.251
+  },
+  {
+    "id": "kalymnos",
+    "nombre": "Kalymnos",
+    "region": "Dodecaneso, Grecia",
+    "latitud": 36.956,
+    "longitud": 26.984
+  },
+  {
+    "id": "ceuse",
+    "nombre": "Céüse",
+    "region": "Altos Alpes, Provenza-Alpes-Costa Azul, Francia",
+    "latitud": 44.493,
+    "longitud": 5.942
+  },
+  {
+    "id": "gorges-du-verdon",
+    "nombre": "Gorges du Verdon",
+    "region": "Var, Provenza-Alpes-Costa Azul, Francia",
+    "latitud": 43.777,
+    "longitud": 6.328
+  },
+  {
+    "id": "fontainebleau",
+    "nombre": "Fontainebleau",
+    "region": "Sena y Marne, Isla de Francia, Francia",
+    "latitud": 48.404,
+    "longitud": 2.638
+  },
+  {
+    "id": "frankenjura",
+    "nombre": "Frankenjura",
+    "region": "Baviera, Alemania",
+    "latitud": 49.729,
+    "longitud": 11.337
+  },
+  {
+    "id": "arco",
+    "nombre": "Arco",
+    "region": "Trentino-Alto Adigio, Italia",
+    "latitud": 45.918,
+    "longitud": 10.886
+  },
+  {
+    "id": "yosemite",
+    "nombre": "Yosemite",
+    "region": "California, Estados Unidos",
+    "latitud": 37.733,
+    "longitud": -119.637
+  },
+  {
+    "id": "red-river-gorge",
+    "nombre": "Red River Gorge",
+    "region": "Kentucky, Estados Unidos",
+    "latitud": 37.833,
+    "longitud": -83.625
+  },
+  {
+    "id": "smith-rock",
+    "nombre": "Smith Rock",
+    "region": "Oregón, Estados Unidos",
+    "latitud": 44.368,
+    "longitud": -121.140
+  },
+  {
+    "id": "squamish",
+    "nombre": "Squamish",
+    "region": "Columbia Británica, Canadá",
+    "latitud": 49.698,
+    "longitud": -123.153
+  },
+  {
+    "id": "potrero-chico",
+    "nombre": "Potrero Chico",
+    "region": "Nuevo León, México",
+    "latitud": 25.955,
+    "longitud": -100.469
+  },
+  {
+    "id": "rocklands",
+    "nombre": "Rocklands",
+    "region": "Cabo Occidental, Sudáfrica",
+    "latitud": -32.429,
+    "longitud": 19.016
+  },
+  {
+    "id": "railay",
+    "nombre": "Railay",
+    "region": "Krabi, Tailandia",
+    "latitud": 8.011,
+    "longitud": 98.838
+  },
+  {
+    "id": "grampians",
+    "nombre": "Grampians",
+    "region": "Victoria, Australia",
+    "latitud": -37.139,
+    "longitud": 142.519
+  },
+  {
+    "id": "wadi-rum",
+    "nombre": "Wadi Rum",
+    "region": "Gobernación de Áqaba, Jordania",
+    "latitud": 29.575,
+    "longitud": 35.421
+  },
+  {
+    "id": "indian-creek",
+    "nombre": "Indian Creek",
+    "region": "Utah, Estados Unidos",
+    "latitud": 38.005,
+    "longitud": -109.547
+  }
+]

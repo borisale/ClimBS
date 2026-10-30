@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClimBS</title>
+
+  <meta name="description"
+    content="Bienvenido a ClimBS, centro de escalada de alto rendimiento, con cursos personalizados, excursiones a roca guiadas e instalaciones equipadas para toddas las necesidades" />
+
+  <!-- Links -->
+  <link rel="stylesheet" href="/src/css/styles.css" />
+  <link rel="stylesheet" href="/src/css/index.css" />
+
+  <script type="module" src="/index.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header">
+    <a href="index.html" aria-label="Inicio">
+      <h1 id="ClimBS">ClimBS</h1>
+    </a>
+    <nav id="nav">
+      <!-- Botón -->
+      <button class="menu-toggle" type="button" aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú">
+        &#9776;
+      </button>
+      <!-- Barra -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" aria-label="Inicio">Inicio</a></li>
+        <li><a href="/src/html/services.html" aria-label="Servicios">Servicios</a></li>
+        <li><a href="/src/html/zonas.html" aria-label="Zonas">Zonas</a></li>
+        <li><a href="/src/html/contact.html" aria-label="Contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+    <!-- Bienvenida -->
+    <section class="welcome_container">
+      <article class="welcome_card">
+        <h2 class="welcome_title">Bienvenido a ClimBS</h2>
+        <p class="welcome_text">
+          ClimBS es un centro de escalada pensado para descubrir tus límites y superarlos. Aquí encontrarás paredes para
+          todos los niveles, desde principiantes hasta escaladores experimentados. Nuestro espacio combina técnica,
+          seguridad y buen ambiente para ayudarte a progresar y disfrutar de cada movimiento. Además, contamos con
+          entrenadores especializados, rutas variadas y una comunidad apasionada por la escalada.
+        </p>
+      </article>
+      <aside class="aside">
+        <img class="aside_img" src="/src/images/escalada.svg" />
+      </aside>
+    </section>
+
+    <!-- Sobre nosotros -->
+    <section class="aboutUs_container">
+      <article class="aboutUs_article">
+        <h2 class="aboutUs_title">Sobre nosotros</h2>
+        <p class="aboutUs_text">
+          En ClimBS somos un centro de escalada apasionado por la roca, la técnica y la superación personal. Creemos que
+          escalar combina disciplina, concentración, confianza y aventura. Nuestro objetivo es ofrecer un espacio
+          acogedor y seguro donde cada persona pueda progresar a su ritmo y disfrutar del movimiento sobre la pared.
+        </p>
+      </article>
+    </section>
+
+    <!-- Funcionalidades -->
+    <section class="functions_container">
+      <article class="functions_article">
+        <h2 class="functions_title">Nuestras funcionalidades</h2>
+        <p class="functions_text">
+          Ofrecemos rutas de escalada para distintos niveles, sesiones guiadas con monitores y actividades para grupos.
+          Consulta la página de servicios para conocer más.
+        </p>
+      </article>
+      <div class="functions">
+        <div class="function">
+          <img class="function_image" src="/src/images/rocodromo.svg" />
+          <p class="function_text">Rocódromo</p>
+        </div>
+        <div class="function">
+          <img class="function_image" src="/src/images/entrenamiento.svg" />
+          <p class="function_text">Máquinas de rendimiento</p>
+        </div>
+        <div class="function">
+          <img class="function_image" src="/src/images/cursos.svg" />
+          <p class="function_text">Cursos</p>
+        </div>
+        <div class="function">
+          <img class="function_image" src="/src/images/excursiones.svg" />
+          <p class="function_text">Excursiones guiadas</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section class="location_container">
+      <article class="location_card">
+        <h2 class="location_title">Donde encontrarnos</h2>
+        <p>
+          Puedes encontrarnos en Erribera Etorbidea, s/n, 48902 San Vicente de Barakaldo, Bizkaia
+        </p>
+      </article>
+      <aside class="map_container">
+        <iframe class="map" title="Mapa de ubicación de ClimBS en Barakaldo"
+          src="https://maps.google.com/maps?q=Erribera%20Etorbidea%2C%20s%2Fn%2C%2048902%20San%20Vicente%20de%20Barakaldo%2C%20Bizkaia&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <a href="https://maps.google.com/?q=Erribera+Etorbidea,+s%2Fn,+48902+San+Vicente+de+Barakaldo,+Bizkaia"
+          target="_blank" rel="noopener noreferrer">
+          Abrir ubicación en Google Maps
+        </a>
+      </aside>
+    </section>
+
+  </main>
+  <!-- Fin contenido principal -->
+</body>
+
+<!-- Footer -->
+<footer id="footer">
+  <p class="copyright">&copy; 2026 ClimBS. Todos los derechos reservados.</p>
+</footer>
+
+</html>

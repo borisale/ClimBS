@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+
+  <!-- Links -->
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/contact.css" />
+
+  <script type="module" src="../../main.js"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header">
+    <a href="../../index.html" aria-label="Inicio">
+      <h1 id="ClimBS">ClimBS</h1>
+    </a>
+    <nav id="nav">
+      <!-- Botón -->
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-label="Abrir menú">
+        &#9776;
+      </button>
+      <!-- Barra -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../../index.html" aria-label="Inicio">Inicio</a></li>
+        <li><a href="services.html" aria-label="Servicios">Servicios</a></li>
+        <li><a href="zonas.html" aria-label="Zonas">Zonas</a></li>
+        <li><a href="contact.html" aria-label="Contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <h2 class="contact_title">
+    <span class="title_text">Conoce a nuestro equipo</span>
+  </h2>
+
+  <section class="container" aria-label="Equipo de ClimBS">
+    <article class="card">
+      <img class="card_img" src="../images/person1.jpg" alt="Karmele, fisioterapeuta" />
+      <p class="card_text">
+        Karmele, fisioterapeuta de ClimBS y amante de la escalada con más de 10 años de experiencia en lesiones
+        relacionadas con la misma. También se encarga de estructurar los entrenamientos para evitar lesiones y mejorar
+        la elisticidad.
+      </p>
+    </article>
+    <article class="card">
+      <img class="card_img" src="../images/person2.jpg" alt="Eustakio, entrenador" />
+      <p class="card_text">
+        Eustakio, la estrella del equipo, 9B+ en roca, más de 15 años de experiencia escalando y compitiendo, siempre
+        formándose para mejorar los entrenamientos de nuestros alumnos y mejorar sus adaptaciones para el tipo de
+        escalada que quieren seguir, ya sea roca, boulder o dificultad.
+      </p>
+    </article>
+    <article class="card">
+      <img class="card_img" src="../images/person3.jpg" alt="Pepe, entrenador" />
+      <p class="card_text">
+        Pepe, el senior del equipo y el que más experiencia tiene, todos hemos aprendido de él. Con un sólido
+        9B en roca y más de 20 años formando a los mayores escaladores del mundo. Se centra sobre todo en roca, las
+        competiciones se las deja a Eustakio. Con él aprendereis a mejorar vuestra técnica y a superar vuestro grado
+        máximo en roca. Para los que se inician en roca, es el que os llevará a los bautismos para enseñaros todo lo que
+        se necesita saber, tanto de escalada deportiva como de clásica, todo eso sin olvidarnos de los largos.
+
+      </p>
+    </article>
+  </section>
+
+  <!-- Formulario de contacto -->
+  <section class="contact_section">
+    <h2 class="form_title">Formulario de contacto</h2>
+    <form id="contact_form" action="#" method="post">
+      <span class="name_surname">
+        <span class="name_container">
+          <label for="name">Nombre</label>
+          <input type="text" id="name" name="name" placeholder="Nombre" pattern="[A-Za-z ]{2,15}" maxlength="15"
+            required />
+        </span>
+        <span class="surname1_container">
+          <label for="surname1">Apellido 1</label>
+          <input type="text" id="surname1" name="surname1" placeholder="Apellido 1" pattern="[A-Za-z ]{2,15}"
+            maxlength="15" required />
+        </span>
+        <span class="surname2_container">
+          <label for="surname2">Apellido 2</label>
+          <input type="text" id="surname2" name="surname2" placeholder="Apellido 2" pattern="[A-Za-z ]{2,15}"
+            maxlength="15" required />
+        </span>
+      </span>
+      <span class="phone_department">
+        <span class="phone_container">
+          <label for="phone">Teléfono</label>
+          <input type="tel" id="phone" name="phone" placeholder="666777888" pattern="[0-9]{9}" maxlength="9"
+            inputmode="numeric" required />
+        </span>
+        <span class="department_container">
+          <label for="department">Departamento</label>
+          <select id="department" name="department" required>
+            <option value="">Seleccionar departamento</option>
+            <option value="client_att">Atención al Cliente</option>
+            <option value="adm">Administración</option>
+            <option value="rrhh">Recursos Humanos</option>
+          </select>
+        </span>
+      </span>
+      <span class="msg_container">
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="6" placeholder="Inserte su comentario aquí" required></textarea>
+      </span>
+      <span class="checkbox_container">
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms">Acepto los <a href="#">términos y condiciones</a></label>
+      </span>
+      <span class="button_container">
+        <button type="submit" class="submit_btn">Enviar</button>
+      </span>
+    </form>
+  </section>
+  <!-- Fin formulario de contacto -->
+
+</body>
+<!-- Footer -->
+<footer id="footer">
+  <p class="copyright">&copy; 2026 ClimBS Todos los derechos reservados.</p>
+</footer>
+
+</html>

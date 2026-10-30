@@ -1,0 +1,174 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedores */
+.welcome_container,
+.location_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    min-height: 520px;
+    padding: 3rem 6%;
+    background-color: #eca85b;
+}
+
+.functions_container,
+.aboutUs_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 500px;
+    padding: 3rem 6%;
+}
+
+.function_container {
+    background-color: #6aa8b1;
+}
+
+.aboutUs_container {
+    justify-content: center;
+    background-image:
+        linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),
+        url("../../images/bg-person.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* Contenido de bienvenida */
+.welcome_card,
+.location_card {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    padding: 2rem;
+    border-radius: 15px;
+    background-color: #eff1f1;
+    box-shadow: 0 10px 25px rgb(0 0 0 / 18%);
+}
+
+.welcome_title,
+.functions_title,
+.aboutUs_title,
+.location_title {
+    margin: 0 0 1rem;
+    font-size: clamp(1.5rem, 3vw, 1.8rem);
+}
+
+.aside,
+.map_container {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.aside_img {
+    display: block;
+    width: 100%;
+    max-height: 420px;
+    border-radius: 15px;
+    object-fit: contain;
+}
+
+
+/* Contenido de Sobre nosotros */
+.aboutUs_article {
+    width: min(100%, 760px);
+    padding: 2rem 0;
+}
+
+.aboutUs_title {
+    color: #eca85b;
+}
+
+.aboutUs_text {
+    color: white;
+}
+
+
+/* Contenido de funcionalidades */
+.functions_article {
+    max-width: 900px;
+    padding-bottom: 2rem;
+}
+
+.functions {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.function {
+    text-align: center;
+}
+
+.function_image {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.feature_text {
+    margin: 0.5rem 0;
+}
+
+
+/* Contenido de Localización */
+.map_container {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.map {
+    width: 100%;
+    min-height: 320px;
+    border: 0;
+}
+
+/* Móvil */
+@media (max-width: 700px) {
+
+    .welcome_container,
+    .location_container {
+        flex-direction: column;
+        min-height: 0;
+        padding: 2rem 5%;
+    }
+
+    .welcome_card,
+    .location_card {
+        width: 100%;
+        flex-basis: auto;
+        padding: 1.5rem;
+    }
+
+    .aside,
+    .map_container {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .aside_img {
+        max-height: 280px;
+    }
+
+    .function_container,
+    .aboutUs_container {
+        min-height: 0;
+        padding: 2rem 5%;
+    }
+
+    .functions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
