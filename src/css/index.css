@@ -34,7 +34,7 @@ main {
     justify-content: center;
     background-image:
         linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),
-        url("../../images/bg-person.jpg");
+        url("../images/bg-person.jpg");
     background-position: center;
     background-size: cover;
 }

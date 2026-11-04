@@ -1,0 +1,193 @@
+main {
+    min-height: calc(100vh - 270px);
+    min-height: calc(100dvh - 270px);
+    background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)),
+        url(../images/bg-zones.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.main-zonas--inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-zonas--inicial #listaPaises {
+    margin: 0;
+}
+
+#listaPaises {
+    width: min(100%, 28rem);
+    min-height: 3rem;
+    margin: clamp(1.5rem, 4vw, 3rem) 0 1.5rem;
+    padding: 0.65rem 2.5rem 0.65rem 0.9rem;
+    border: 1px solid #536b65;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #111;
+    font: inherit;
+    font-size: 1rem;
+}
+
+#listaPaises:focus-visible {
+    outline: 3px solid #22505f;
+    outline-offset: 3px;
+}
+
+#tituloPais {
+    width: min(92%, 1100px);
+    margin: 0 auto 1.25rem;
+    color: #fff;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    text-align: center;
+}
+
+#sectionSectores.card-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
+    align-items: stretch;
+    gap: 1.25rem;
+    width: min(92%, 1100px);
+    margin: 0 auto clamp(2rem, 5vw, 4rem);
+}
+
+#sectionSectores>p {
+    grid-column: 1 / -1;
+    margin: 0;
+    text-align: center;
+}
+
+#sectionSectores > p {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #eff1f1;
+}
+
+#paginacionSectores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: min(92%, 1100px);
+    margin: -1.5rem auto clamp(2rem, 5vw, 4rem);
+    color: #fff;
+}
+
+#paginacionSectores[hidden] {
+    display: none;
+}
+
+#paginacionSectores button {
+    min-height: 2.75rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid #22505f;
+    border-radius: 6px;
+    background-color: #4da9c7;
+    color: #111;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#paginacionSectores button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+#paginacionSectores button:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 3px;
+}
+
+#sectionSectores > article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+    height: 23rem;
+    min-width: 0;
+    padding: clamp(1.25rem, 3vw, 1.75rem);
+    border-radius: 10px;
+    background-color: #eff1f1;
+    box-shadow: 0 6px 18px rgb(0 0 0 / 1);
+
+}
+
+#sectionSectores>article h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    overflow-wrap: anywhere;
+}
+
+#sectionSectores>article>.sector-photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    background-color: #d8e2de;
+    object-fit: cover;
+}
+
+#sectionSectores>article>.sector-photo-credit {
+    margin-top: -0.5rem;
+    color: #22505f;
+    font-size: 0.75rem;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+    display: none;
+}
+
+#sectionSectores>article>.sector-photo-credit:hover,
+#sectionSectores>article>.sector-photo-credit:focus-visible {
+    color: #14323d;
+}
+
+#sectionSectores>article p {
+    margin: 0;
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+}
+
+#sectionSectores>article button {
+    min-height: 2.75rem;
+    margin-top: auto;
+    padding: 0.6rem 1rem;
+    border: 1px solid #22505f;
+    border-radius: 6px;
+    background-color: #4da9c7;
+    color: #111;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#sectionSectores>article button:hover {
+    background-color: #2d6375;
+    color: #fff;
+}
+
+#sectionSectores>article button:focus-visible {
+    outline: 3px solid #22505f;
+    outline-offset: 3px;
+}
+
+@media (max-width: 780px) {
+    main {
+        min-height: calc(100vh - 220px);
+        min-height: calc(100dvh - 220px);
+    }
+}
+
+@media (max-width: 600px) {
+    #sectionSectores.card-info {
+        width: min(92%, 32rem);
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    #sectionSectores>article {
+        padding: 1.25rem;
+    }
+}

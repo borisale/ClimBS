@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const navLinks = document.querySelector(".nav-links");
-    const form = document.getElementById("contact_form");
 
     if (menuToggle && navLinks) {
         const setMenuOpen = (isOpen) => {
@@ -30,11 +29,4 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-
-    //Validación formulario
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-        alert("Formulario enviado correctamente");
-    });
-
 });
