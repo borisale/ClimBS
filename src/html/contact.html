@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/contact.css" />
 
-  <script type="module" src="../../main.js"></script>
+  <script type="module" src="/index.js"></script>
 </head>
 
 <body>
@@ -126,5 +126,13 @@
 <footer id="footer">
   <p class="copyright">&copy; 2026 ClimBS Todos los derechos reservados.</p>
 </footer>
+<script>
+   //Validación formulario
+   const form = document.getElementById("contact_form");
 
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        alert("Formulario enviado correctamente");
+    });
+</script>
 </html>

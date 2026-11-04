@@ -4,19 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ClimBS</title>
-
-    <meta name="description"
-        content="Bienvenido a ClimBS, centro de escalada de alto rendimiento, con cursos personalizados, excursiones a roca guiadas e instalaciones equipadas para toddas las necesidades" />
+    <title>Zonas</title>
 
     <!-- Links -->
     <link rel="stylesheet" href="/src/css/styles.css" />
     <link rel="stylesheet" href="/src/css/index.css" />
+    <link rel="stylesheet" href="/src/css/zonas.css" />
 
     <script type="module" src="/index.js"></script>
-    <script type="module" src="/src/ui/paginator.js" defer></script>
     <script type="module" src="/src/utils/functions.js" defer></script>
-    <script type="module" src="/src/utils/errors.js" defer></script>
 
 
 </head>
@@ -44,12 +40,25 @@
     </header>
 
     <!-- Contenido principal -->
-    <main>
+    <main id="mainZonas" class="main-zonas main-zonas--inicial">
+        <!-- Select de la lista de sectores disponibles -->
+        <select id="listaPaises">
+            <option value="">Selecciona un país</option>
+        </select>
 
+        <h2 id="tituloPais" hidden></h2>
 
+        <!-- Tarjetas de los sectores con sus temperaturas -->
+        <section id="sectionSectores" class="card-info">
+        </section>
 
+        <nav id="paginacionSectores" aria-label="Paginación de sectores" hidden>
+            <button id="paginaAnterior" type="button" disabled>Anterior</button>
+            <span id="informacionPagina" aria-live="polite"></span>
+            <button id="paginaSiguiente" type="button" disabled>Siguiente</button>
+        </nav>
     </main>
-    <!-- Fin contenido principal -->
+
 </body>
 
 <!-- Footer -->
