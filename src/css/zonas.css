@@ -25,11 +25,16 @@ main {
     padding: 0.65rem 2.5rem 0.65rem 0.9rem;
     border: 1px solid #536b65;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: rgb(255 255 255 / 40%);
+    backdrop-filter: blur(4px);
     color: #111;
     font: inherit;
     font-size: 1rem;
 }
+#listaPaises a:hover{
+    border-color: blue;
+}
+
 
 #listaPaises:focus-visible {
     outline: 3px solid #22505f;
