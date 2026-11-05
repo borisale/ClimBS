@@ -18,7 +18,8 @@ main {
     margin: 0;
 }
 
-#listaPaises {
+#listaPaises,
+#buscadorSectores {
     width: min(100%, 28rem);
     min-height: 3rem;
     margin: clamp(1.5rem, 4vw, 3rem) 0 1.5rem;
@@ -31,12 +32,8 @@ main {
     font: inherit;
     font-size: 1rem;
 }
-#listaPaises a:hover{
-    border-color: blue;
-}
-
-
-#listaPaises:focus-visible {
+#listaPaises:focus-visible,
+#buscadorSectores:focus-visible {
     outline: 3px solid #22505f;
     outline-offset: 3px;
 }
@@ -62,12 +59,6 @@ main {
     grid-column: 1 / -1;
     margin: 0;
     text-align: center;
-}
-
-#sectionSectores > p {
-    padding: 1.5rem;
-    border-radius: 10px;
-    background-color: #eff1f1;
 }
 
 #paginacionSectores {
@@ -111,11 +102,11 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.75rem;
-    height: 23rem;
+    min-height: 23rem;
     min-width: 0;
     padding: clamp(1.25rem, 3vw, 1.75rem);
     border-radius: 10px;
-    background-color: #eff1f1;
+    background-color: rgb(255 255 255 / 40%);
     box-shadow: 0 6px 18px rgb(0 0 0 / 1);
 
 }
@@ -130,6 +121,7 @@ main {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
+    flex: 0 0 auto;
     border-radius: 8px;
     background-color: #d8e2de;
     object-fit: cover;
@@ -155,27 +147,92 @@ main {
     overflow-wrap: anywhere;
 }
 
-#sectionSectores>article button {
-    min-height: 2.75rem;
-    margin-top: auto;
-    padding: 0.6rem 1rem;
+#sectionSectores > article .sector-weather {
+    display: flex;
+    flex: 0 0 3.25rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.15rem;
+    width: 100%;
+    min-width: 0;
+}
+
+#sectionSectores > article .sector-weather p {
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+#sectionSectores > article .sector-actions button {
+    min-width: 0;
+    min-height: 3rem;
+    padding: 0.55rem 0.65rem;
     border: 1px solid #22505f;
     border-radius: 6px;
     background-color: #4da9c7;
     color: #111;
     font: inherit;
+    font-size: 0.9rem;
     font-weight: 700;
+    line-height: 1.25;
+    overflow-wrap: anywhere;
     cursor: pointer;
 }
 
-#sectionSectores>article button:hover {
+#sectionSectores > article .sector-actions .favorite-button {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    min-height: 3rem;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: inherit;
+    justify-self: end;
+}
+
+#sectionSectores > article .sector-actions .favorite-button:hover {
+    background: transparent;
+    color: inherit;
+}
+
+#sectionSectores > article .sector-actions .favorite-button img {
+    display: block;
+    width: 1.75rem;
+    height: 1.75rem;
+    object-fit: contain;
+}
+
+#sectionSectores > article .sector-actions button:hover {
     background-color: #2d6375;
     color: #fff;
 }
 
-#sectionSectores>article button:focus-visible {
+#sectionSectores > article .sector-actions button:focus-visible {
     outline: 3px solid #22505f;
     outline-offset: 3px;
+}
+
+#sectionSectores > article .sector-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 3rem;
+    gap: 0.6rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+#sectionSectores > article .sector-actions button:only-child {
+    grid-column: 1 / -1;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
 }
 
 @media (max-width: 780px) {

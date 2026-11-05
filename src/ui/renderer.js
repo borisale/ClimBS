@@ -15,21 +15,30 @@ function renderCountryOptions(select, countries) {
     select.replaceChildren(select.options[0], ...options);
 }
 
-function createSectorCard(sector, onWeatherClick) {
+function createSectorCard(sector, onWeatherClick, onFavoriteClick, isFavorite) {
     const card = document.createElement("article");
     const image = createSectorImage(sector);
     const photoCredit = createPhotoCredit();
     const heading = document.createElement("h3");
     const region = document.createElement("p");
+    const weatherDetails = document.createElement("div");
     const weatherButton = createWeatherButton();
+    const favoriteButton = createFavoriteButton(isFavorite);
+    const actions = document.createElement("div");
+    weatherDetails.className = "sector-weather";
+    actions.className = "sector-actions";
 
     heading.textContent = sector.nombre;
     region.textContent = `Región: ${sector.region}`;
     weatherButton.addEventListener("click", () => {
         onWeatherClick(sector, card, weatherButton);
     });
+    favoriteButton.addEventListener("click", () => {
+        onFavoriteClick(sector, favoriteButton);
+    });
 
-    card.append(image, photoCredit, heading, region, weatherButton);
+    actions.append(weatherButton, favoriteButton);
+    card.append(image, photoCredit, heading, region, weatherDetails, actions);
     return card;
 }
 
@@ -46,8 +55,7 @@ function renderSectorPhoto(image, photoCredit, photo) {
 function renderWeather(card, weather) {
     const temperature = createMessage(`Temperatura: ${weather.temperature} ºC`);
     const wind = createMessage(`Viento: ${weather.windspeed} km/h`);
-
-    card.append(temperature, wind);
+    card.querySelector(".sector-weather").replaceChildren(temperature, wind);
 }
 
 function removeSectorPhoto(image, photoCredit) {
@@ -75,8 +83,41 @@ function createPhotoCredit() {
 function createWeatherButton() {
     const button = document.createElement("button");
     button.type = "button";
-    button.textContent = "Ver tiempo";
+    button.textContent = "Ver más";
+    button.setAttribute("aria-expanded", "false");
     return button;
 }
 
-export { createMessage, renderCountryOptions, createSectorCard, renderSectorPhoto, renderWeather, removeSectorPhoto }
+function createFavoriteButton(isFavorite) {
+    const button = document.createElement("button");
+    button.className = "favorite-button";
+    button.type = "button";
+    const icon = document.createElement("img");
+    icon.alt = "";
+    icon.width = 28;
+    icon.height = 28;
+    button.append(icon);
+    updateFavoriteButton(button, isFavorite);
+    return button;
+}
+
+function updateFavoriteButton(button, isFavorite) {
+    button.setAttribute("aria-pressed", String(isFavorite));
+    button.setAttribute(
+        "aria-label",
+        isFavorite ? "Quitar de favoritos" : "Añadir a favoritos"
+    );
+    button.querySelector("img").src = isFavorite
+        ? "/src/images/corazon.png"
+        : "/src/images/favorito.png";
+}
+
+export {
+    createMessage,
+    renderCountryOptions,
+    createSectorCard,
+    renderSectorPhoto,
+    renderWeather,
+    removeSectorPhoto,
+    updateFavoriteButton
+};
