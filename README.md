@@ -6,7 +6,7 @@ Sitio web de un centro de escalada con información sobre sus servicios, equipo 
 
 En **Zonas**, selecciona un país para ver sus sectores. Pulsa **Ver más** para consultar la temperatura y el viento del sector; pulsa **Ver menos** para ocultarlos. Usa el icono de corazón para añadirlo o quitarlo de favoritos.
 
-En **Favoritos** se muestran los sectores guardados en el LocalStorage. Puedes buscarlos por nombre y quitarlos con el icono de corazón. Los favoritos se guardan automáticamente en el almacenamiento local del navegador.
+En **Favoritos** se muestran los sectores guardados en el LocalStorage. Puedes buscarlos por nombre y quitarlos con el icono de corazón.
 
 ## Estructura del proyecto
 
