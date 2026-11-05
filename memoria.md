@@ -23,12 +23,13 @@ HTML, CSS y JavaScript. Los sectores se cargan desde un archivo JSON; las fotogr
 
 - **Inicio:** presentación, instalaciones y ubicación.
 - **Servicios:** rocódromo, maquinaria, cursos y excursiones.
-- **Zonas:** selección de país, sectores paginados, fotografías y tiempo actual.
+- **Zonas:** selección de país, tarjetas con cada sector del páis y con un botón para ver el tiempo y otro para añadir favoritos.
+- **Favoritos:** visualización de sectores favs con búsqueda por texto.
 - **Contacto:** presentación del equipo y formulario.
 
 ## 6. Desarrollo y pruebas
 
-En principio iba a trabajar con una API de sectores, pero se necesitaba trabajar en conjunto con GraphQL y no entendía nada asi que cambié a una API de tiempo. La idea era sacar todo el tiempo de todos los sectores de un país, los cuales los tengo metidos a mano en un JSON, pero al ver que la API no aceptada muchas llamadas decidí añadir un botón en cada tarjeta de sector que mostrase el tiempo actual se esa zona.
+En principio iba a trabajar con una API de sectores, pero se necesitaba trabajar en conjunto con GraphQL y no entendía nada asi que cambié a una API de tiempo. La idea era sacar todo el tiempo de todos los sectores de un país, los cuales los tengo metidos a mano en un JSON, pero al ver que la API no aceptada muchas llamadas decidí añadir un botón en cada tarjeta de sector que mostrase el tiempo actual se esa zona. Actualización, se ha añadido otra página para la visualización de favoritos, en un principio pensaba que no iba a hacer falta pero luego he caído en que a la gente le gusta tener guardados los sitios a los que van a menudo.
 
 ## 7. Conclusión
 

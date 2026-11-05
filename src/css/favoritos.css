@@ -1,0 +1,24 @@
+#mainFavoritos {
+    min-height: calc(100vh - 270px);
+    min-height: calc(100dvh - 270px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainFavoritos #tituloPais {
+    margin-top: 0;
+}
+
+#sectionSectores > p {
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: rgb(255 255 255 / 40%);
+}
+
+@media (max-width: 780px) {
+    #mainFavoritos {
+        min-height: calc(100vh - 220px);
+        min-height: calc(100dvh - 220px);
+    }
+}
